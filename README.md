@@ -1,4 +1,4 @@
-# [GroupID] your projrct title
+# [Group6] your projrct title
 The goals of this project.
 
 ## Contributors
@@ -6,6 +6,7 @@ The goals of this project.
 |-|-|-|-|
 |何彥南|資科碩二|110753202|團隊中的吉祥物🦒，負責增進團隊氣氛| 
 |張小銘|資科碩二|xxxxxxxxx|團隊的中流砥柱，一個人打十個|
+|陳柏翰|資科碩一|111753208|尚無|
 
 ## Quick start
 You might provide an example commend or few commends to reproduce your analysis, i.e., the following R script
