@@ -1,12 +1,16 @@
-# [Group6] your projrct title
-The goals of this project.
+# [Group6] House Prices - Advanced Regression Techniques
 
 ## Contributors
 |組員|系級|學號|工作分配|
 |-|-|-|-|
-|何彥南|資科碩二|110753202|團隊中的吉祥物🦒，負責增進團隊氣氛| 
-|張小銘|資科碩二|xxxxxxxxx|團隊的中流砥柱，一個人打十個|
-|陳柏翰|資科碩一|111753208|尚無|
+|黃大維|資科碩一|111753218|Random Forest, 報告, ppt, poster| 
+|陳柏翰|資科碩一|111753208|XG Boost, 報告, ppt, poster|
+|鄭安翔|資科碩專|111753208|Decision Tree, shiny|
+|趙子翔|資科四|108703011|SVM, github|
+|郭羿宏|資科四|108703039|無|
+
+## Goal
+預測房屋價格。
 
 ## Quick start
 You might provide an example commend or few commends to reproduce your analysis, i.e., the following R script
