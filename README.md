@@ -15,7 +15,10 @@
 ## Quick start
 You might provide an example commend or few commends to reproduce your analysis, i.e., the following R script
 ```R
-Rscript code/your_script.R --input data/training --output results/performance.tsv
+Rscript code/random_forest.R --train [train.csv] --test [test.csv] --predict [file.csv]
+Rscript code/run_xgboost.R --train [train.csv] --test [test.csv] --predict [file.csv]
+Rscript code/svm.R --train [train.csv] --test [test.csv] --predict [file.csv]
+Rscript code/HousePrice.R --train [train.csv] --test [test.csv] --predict [file.csv]
 ```
 
 ## Folder organization and its related description
@@ -46,4 +49,5 @@ idea by Noble WS (2009) [A Quick Guide to Organizing Computational Biology Proje
 
 ## References
 * Packages you use
-* Related publications
+* Related publications  
+https://www.kaggle.com/code/mtyxwp/svm-simple
