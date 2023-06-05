@@ -5,7 +5,7 @@
 |-|-|-|-|
 |黃大維|資科碩一|111753218|Random Forest, 報告, ppt, poster| 
 |陳柏翰|資科碩一|111753208|XG Boost, 報告, ppt, poster|
-|鄭安翔|資科碩專|111753208|Decision Tree, shiny|
+|鄭安翔|資科碩專|110971029|Decision Tree, shiny|
 |趙子翔|資科四|108703011|SVM, github|
 |郭羿宏|資科四|108703039|無|
 
