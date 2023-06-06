@@ -28,7 +28,7 @@ idea by Noble WS (2009) [A Quick Guide to Organizing Computational Biology Proje
 * Your presentation, 1112_DS-FP_groupID.ppt/pptx/pdf (i.e.,1112_DS-FP_group1.ppt), by **06.08**
 * Any related document for the project
   * i.e., software user guide
-
+Shinyapps: https://anselcheng.shinyapps.io/HousePrice/
 ### data
 * Input
   * Source
