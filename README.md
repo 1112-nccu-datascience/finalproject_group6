@@ -50,7 +50,7 @@ Rscript code/HousePrice.R --train [train.csv] --test [test.csv] --predict [file.
   * Source: [House Prices - Advanced Regression Techniques](https://www.kaggle.com/competitions/house-prices-advanced-regression-techniques)
   * Format: 2個CSV檔案, 訓練資料和測試資料。79個feature欄位, 訓練資料含有SalePrice目標欄位。
   * Size: 訓練資料1460筆，測試資料1459筆。
-  * 
+
 * Output
   * Format: CSV file, 2欄位 (ID, SalePrice)
   * Size: 訓練資料1460筆，測試資料1459筆
@@ -92,8 +92,29 @@ ex. 泳池面積、紗窗門廊面積、其他配套設施費用等。
   * RMSE
   * R-Squared
   * MAE
+ 
+|Method|RMSE|RSquared|MAE|
+|-|-|-|-|
+|Random Forest|25027.45|0.8981283|16188.14| 
+|XGBoost|22337.72|0.916011|14366.37|
+|Support Vector Machine|38866.25|0.7484611|25091.4|
+|Decision Tree|47315.27|0.6185629|34599.72|
+
 * Kaggle Score
 
+|Method|Score|
+|-|-|
+|Random Forest|0.13036|
+|XGBoost|0.14878|
+|Support Vector Machine|0.22432|
+|Decision Tree|0.23917|
+
+* 對SalePrice欄位做對數處理
+
+|Method|Score|
+|-|-|
+|XGBoost|0.13036|
+|XGBoost (log)|0.12740|
 
 ## References
 * Packages you use
