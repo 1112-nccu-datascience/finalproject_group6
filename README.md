@@ -31,9 +31,9 @@
 You might provide an example commend or few commends to reproduce your analysis, i.e., the following R script
 ```R
 Rscript code/random_forest.R --train [train.csv] --test [test.csv] --predict [file.csv]
-Rscript code/run_xgboost.R --train [train.csv] --test [test.csv] --predict [file.csv]
+Rscript code/xgboost.R --train [train.csv] --test [test.csv] --predict [file.csv]
 Rscript code/svm.R --train [train.csv] --test [test.csv] --predict [file.csv]
-Rscript code/HousePrice.R --train [train.csv] --test [test.csv] --predict [file.csv]
+Rscript code/decision_tree.R --train [train.csv] --test [test.csv] --predict [file.csv]
 ```
 
 
@@ -41,7 +41,7 @@ Rscript code/HousePrice.R --train [train.csv] --test [test.csv] --predict [file.
 
 
 ### docs
-* Your presentation, 1112_DS-FP_groupID.ppt/pptx/pdf (i.e.,1112_DS-FP_group1.ppt), by **06.08**
+* Presentation: [Group6_finalProject.pptx](docs/Group6_finalProject.pptx)
 * Shinyapps: https://anselcheng.shinyapps.io/HousePrice/
 
 ### data
@@ -115,6 +115,8 @@ ex. 泳池面積、紗窗門廊面積、其他配套設施費用等。
 |-|-|
 |XGBoost|0.13036|
 |XGBoost (log)|0.12740|
+
+* Rplot: [PDF](results/Rplots.pdf)
 
 ## References
 * Packages you use
