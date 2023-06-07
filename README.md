@@ -36,33 +36,86 @@ Rscript code/svm.R --train [train.csv] --test [test.csv] --predict [file.csv]
 Rscript code/HousePrice.R --train [train.csv] --test [test.csv] --predict [file.csv]
 ```
 
+
 ## Folder organization and its related description
+
 
 ### docs
 * Your presentation, 1112_DS-FP_groupID.ppt/pptx/pdf (i.e.,1112_DS-FP_group1.ppt), by **06.08**
 * Shinyapps: https://anselcheng.shinyapps.io/HousePrice/
 
 ### data
+
 * Input
   * Source: [House Prices - Advanced Regression Techniques](https://www.kaggle.com/competitions/house-prices-advanced-regression-techniques)
   * Format: 2個CSV檔案, 訓練資料和測試資料。79個feature欄位, 訓練資料含有SalePrice目標欄位。
   * Size: 訓練資料1460筆，測試資料1459筆。
+  * 
 * Output
   * Format: CSV file, 2欄位 (ID, SalePrice)
   * Size: 訓練資料1460筆，測試資料1459筆
 
+
 ### code
-* Analysis steps
-* Which method or package do you use? 
-  * original packages in the paper
-  * additional packages you found
+* Preprocess
+  * 資料刪減  
+移除地上生活面積大於4000的資料(離群值)。  
+
+  * 填補缺失值 
+對所有欄位的缺失值分別全部填入欄的平均數、中位數、眾數，測試結果為平均數分數最高。  
+針對部分欄位做個別的處理。  
+ex.	對GarageCars類別進行眾數處理，因為它具有明顯的分類標籤的變量。  
+部分欄位以N/A表示一種狀態，填入"None"處裡。
+
+  * 保留高相關度資料  
+以 0.3 為標準，保留高相關，並捨棄相關度較低的資料。  
+ex. 泳池面積、紗窗門廊面積、其他配套設施費用等。
+
+  * 對目標欄位進行處裡  
+從SalePrice的直方圖中發現，他的樣本有偏移的現象。  
+透過取對數來將資料拉回使為更集中。
+
+
+* Methods
+
+  * Random Forest
+  * XGBoost
+  * Support Vector Machine
+  * Decision Tree
+
 
 ### results
-* What is a null model for comparison?
-* How do your perform evaluation?
-  * Cross-validation, or extra separated data
+* Evaluation
+
+  * Null Model: LM Model
+  * 5-fold Cross-validation
+  * RMSE
+  * R-Squared
+  * MAE
+* Kaggle Score
+
 
 ## References
 * Packages you use
+  * library(randomForest)
+  * library(caret)
+  * library(pROC)
+  * library(xgboost)
+  * library(gridExtra)
+  * library(corrplot)
+  * library(magrittr)
+  * library(dplyr)
+  * library(e1071)
+  * library(randomForest)
+  * library(quantregForest)
+  * library(tidyverse)
+  * library(skimr)
+  * library(Amelia)
+  * library(rpart)
+  * library(rpart.plot)
+  * library(mice)
+  * library(ggfortify)
+
 * Related publications  
-https://www.kaggle.com/code/mtyxwp/svm-simple
+  * [House Prices - Advanced Regression Techniques](https://www.kaggle.com/competitions/house-prices-advanced-regression-techniques)  
+  * [SVM](https://www.kaggle.com/code/mtyxwp/svm-simple)
