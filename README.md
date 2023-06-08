@@ -53,7 +53,6 @@ Rscript code/decision_tree.R --train [train.csv] --test [test.csv] --predict [fi
 
 * Output
   * Format: CSV file, 2欄位 (ID, SalePrice)
-  * Size: 訓練資料1460筆，測試資料1459筆
 
 
 ### code
